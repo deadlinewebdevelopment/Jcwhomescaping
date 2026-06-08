@@ -9,43 +9,42 @@
 </head>
 <body>
 
+```
 <nav>
     <div class="nav-container">
 
-```
-    <a href="index.html" class="brand">
-        <img src="images/logo.png" alt="JCW Logo">
-        <span>JCW Pest Control & Landscaping</span>
-    </a>
+        <a href="index.html" class="brand">
+            <img src="images/logo.png" alt="JCW Logo">
+            <span>JCW Pest Control & Landscaping</span>
+        </a>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
 
-</div>
-```
-
+    </div>
 </nav>
 
 <section class="hero-slider">
 
-```
-<div class="slide active">
-    <img src="images/pestcontrol.png" alt="Pest Control">
-</div>
+    <div class="slide active">
+        <img src="images/pestcontrol.png" alt="Professional Pest Control">
+    </div>
 
-<div class="slide">
-    <img src="images/landscaping.png" alt="Landscaping">
-</div>
+    <div class="slide">
+        <img src="images/landscaping.png" alt="Professional Landscaping">
+    </div>
 
-<div class="slide">
-    <img src="images/completecare.png" alt="Complete Care">
-</div>
+    <div class="slide">
+        <img src="images/completecare.png" alt="One Company Complete Care">
+    </div>
 
-<div class="hero-content">
+</section>
+
+<section class="hero-info">
 
     <img src="images/logo.png" alt="JCW Logo" class="hero-logo">
 
@@ -59,27 +58,25 @@
         Get A Free Quote
     </a>
 
-</div>
-```
-
 </section>
 
 <script>
 
-const slides = document.querySelectorAll('.slide');
-let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
 
-setInterval(() => {
+    setInterval(() => {
 
-    slides[current].classList.remove('active');
+        slides[current].classList.remove('active');
 
-    current = (current + 1) % slides.length;
+        current = (current + 1) % slides.length;
 
-    slides[current].classList.add('active');
+        slides[current].classList.add('active');
 
-}, 5000);
+    }, 5000);
 
 </script>
+```
 
 </body>
 </html>
