@@ -77,9 +77,11 @@ object-fit:cover;
 /* COMPANY INTRO */
 
 .company-intro{
+position:relative;
 background:#ffffff;
 text-align:center;
 padding:70px 20px;
+z-index:5;
 }
 
 .company-intro h1{
