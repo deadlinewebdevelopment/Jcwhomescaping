@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,77 +9,73 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
+```
+<nav class="navbar">
+    <div class="container">
 
-    <nav class="navbar">
-        <div class="container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="JCW Logo">
+        </a>
 
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="JCW Logo">
-            </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    </div>
+</nav>
 
-        </div>
-    </nav>
+<section class="hero">
 
-    <!-- HERO SLIDESHOW -->
+    <div class="slide active">
+        <img src="images/pestcontrol.png" alt="Pest Control">
+    </div>
 
-    <section class="hero">
+    <div class="slide">
+        <img src="images/landscaping.png" alt="Landscaping">
+    </div>
 
-        <div class="slide active">
-            <img src="images/pestcontrol.png" alt="Pest Control">
-        </div>
+    <div class="slide">
+        <img src="images/completecare.png" alt="Complete Care">
+    </div>
 
-        <div class="slide">
-            <img src="images/landscaping.png" alt="Landscaping">
-        </div>
+</section>
 
-        <div class="slide">
-            <img src="images/completecare.png" alt="Complete Care">
-        </div>
+<section class="company-intro">
 
-        <div class="overlay"></div>
+    <h1>JCW Pest Control & Landscaping</h1>
 
-        <div class="hero-content">
-            <h1>JCW Pest Control & Landscaping</h1>
+    <p class="tagline">
+        Professional Pest Control & Landscaping
+    </p>
 
-            <p>
-                Professional Pest Control & Landscaping
-            </p>
+    <p>
+        Licensed • Insured • Free Estimates
+    </p>
 
-            <p class="subtext">
-                Licensed • Insured • Free Estimates
-            </p>
+    <p>
+        Serving North Jersey, Central Jersey & Upstate New York
+    </p>
 
-            <a href="contact.html" class="btn">
-                GET A FREE QUOTE
-            </a>
-        </div>
+    <a href="contact.html" class="btn">
+        GET A FREE QUOTE
+    </a>
 
-    </section>
+</section>
 
-    <script>
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
 
-        const slides = document.querySelectorAll('.slide');
-        let current = 0;
-
-        setInterval(() => {
-
-            slides[current].classList.remove('active');
-
-            current = (current + 1) % slides.length;
-
-            slides[current].classList.add('active');
-
-        }, 5000);
-
-    </script>
+    setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+    }, 5000);
+</script>
+```
 
 </body>
 </html>
