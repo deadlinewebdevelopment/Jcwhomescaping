@@ -1,86 +1,105 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCW Pest Control & Landscaping</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JCW Pest Control & Landscaping</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-```
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="container">
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="JCW Pest Control & Landscaping Logo">
+      </a>
 
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="JCW Logo">
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-btn">Free Quote</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<!-- HERO SLIDESHOW -->
-<section class="hero">
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
     <div class="slide active">
-        <img src="images/pestcontrol.png" alt="Pest Control">
+      <img src="images/pestcontrol.png" alt="Professional Pest Control">
     </div>
 
     <div class="slide">
-        <img src="images/landscaping.png" alt="Landscaping">
+      <img src="images/landscaping.png" alt="Professional Landscaping">
     </div>
 
     <div class="slide">
-        <img src="images/completecare.png" alt="Complete Care">
+      <img src="images/completecare.png" alt="Complete Property Care">
     </div>
 
-</section>
+    <div class="hero-content">
+      <p class="eyebrow">Licensed • Insured • Reliable</p>
+      <h1>JCW Pest Control & Landscaping</h1>
+      <h2>Professional Property Care You Can Trust</h2>
+      <p>
+        Pest control, landscaping, exterior maintenance, and complete property care
+        for homes and businesses.
+      </p>
 
-<!-- COMPANY INFO BELOW HERO -->
-<section class="company-intro">
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn primary">Get A Free Quote</a>
+        <a href="services.html" class="btn secondary">View Services</a>
+      </div>
+    </div>
+  </section>
 
-    <h1>JCW Pest Control & Landscaping</h1>
+  <section class="intro">
+    <div class="container intro-grid">
+      <div>
+        <p class="section-label">Why Choose JCW</p>
+        <h2>Modern service. Honest pricing. Professional results.</h2>
+        <p>
+          We proudly serve North Jersey, Central Jersey, and Upstate New York with
+          dependable pest control and landscaping services designed to keep your
+          property clean, safe, and looking its best.
+        </p>
+      </div>
 
-    <h2>Professional Pest Control & Landscaping</h2>
+      <div class="feature-card">
+        <h3>Lowest Price Guaranteed</h3>
+        <p>Free estimates, fair pricing, and quality work done right.</p>
+      </div>
 
-    <p>
-        Licensed • Insured • Exceptional Service
-    </p>
+      <div class="feature-card">
+        <h3>Pest Control</h3>
+        <p>General pest control, prevention, treatments, and ongoing protection.</p>
+      </div>
 
-    <p>
-        Lowest Price Guaranteed • Free Estimates
-    </p>
+      <div class="feature-card">
+        <h3>Landscaping</h3>
+        <p>Lawn care, mulch, cleanups, trimming, and exterior property maintenance.</p>
+      </div>
+    </div>
+  </section>
 
-    <p>
-        Serving North Jersey, Central Jersey & Upstate New York
-    </p>
+  <section class="cta">
+    <h2>Need pest control or landscaping help?</h2>
+    <p>Contact us today for a free quote.</p>
+    <a href="contact.html" class="btn primary">Request A Quote</a>
+  </section>
 
-    <a href="contact.html" class="btn">
-        Get A Free Quote
-    </a>
-
-</section>
-
-<script>
+  <script>
     const slides = document.querySelectorAll('.slide');
     let current = 0;
 
     setInterval(() => {
-        slides[current].classList.remove('active');
-        current = (current + 1) % slides.length;
-        slides[current].classList.add('active');
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
     }, 5000);
-</script>
-```
+  </script>
 
 </body>
 </html>
