@@ -197,7 +197,119 @@ body {
   margin-bottom: 28px;
   font-size: 1.1rem;
 }
+/* PAGE HEADER */
 
+.page-header {
+background: linear-gradient(135deg, #003366, #07111f);
+color: white;
+text-align: center;
+padding: 90px 20px;
+}
+
+.page-header h1 {
+font-size: clamp(2.2rem, 5vw, 4rem);
+margin-bottom: 15px;
+}
+
+.page-header p {
+color: #d1d5db;
+font-size: 1.1rem;
+max-width: 700px;
+margin: auto;
+}
+
+/* ABOUT PAGE */
+
+.about-section {
+padding: 90px 0;
+background: white;
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 30px;
+align-items: start;
+}
+
+.about-content h2 {
+color: #003366;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.about-content p {
+color: #4b5563;
+margin-bottom: 20px;
+}
+
+.about-card {
+background: #f8fafc;
+border: 1px solid #e5e7eb;
+border-radius: 22px;
+padding: 30px;
+box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.about-card h3 {
+color: #003366;
+margin-bottom: 15px;
+}
+
+.about-card ul {
+list-style: none;
+}
+
+.about-card li {
+padding: 10px 0;
+border-bottom: 1px solid #e5e7eb;
+}
+
+/* SERVICES PAGE */
+
+.services-section {
+padding: 80px 0;
+background: white;
+}
+
+.alt-section {
+background: #f8fafc;
+}
+
+.services-heading {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.services-heading h2 {
+color: #003366;
+font-size: 2.5rem;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+
+/* FOOTER */
+
+.footer {
+background: #07111f;
+color: white;
+text-align: center;
+padding: 25px;
+}
+
+/* ABOUT & SERVICES MOBILE */
+
+@media (max-width: 900px) {
+
+.about-grid {
+grid-template-columns: 1fr;
+}
+
+}
 /* MOBILE */
 
 @media (max-width: 900px) {
